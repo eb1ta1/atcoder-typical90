@@ -14,9 +14,12 @@ fn main() {
     for i in 0..h {
         for j in 0..w {
             let t = rsum[i] + csum[j] - a[i][j];
-            
-            if i != h || j != w {print!("{} ", t);}
-            else {print!("{}", t)}
+
+            if i != h || j != w {
+                print!("{} ", t);
+            } else {
+                print!("{}", t)
+            }
         }
         println!();
     }
